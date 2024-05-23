@@ -1,0 +1,115 @@
+
+/* AuthForms.css */
+
+.auth-form {
+    width: 400px; /* Increased width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .auth-form .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .auth-form .tabs button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form .tabs button:hover {
+    background-color: #ddd;
+  }
+  
+  .auth-form .tabs button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .auth-form .tabs button:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form h2, .signup-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-form form, .signup-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form input, .signup-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-form button, .signup-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover, .signup-form button:hover {
+    background-color: #218838;
+  }
+  
+  .login-form p, .signup-form p {
+    text-align: center;
+    color: #dc3545;
+    margin-top: 10px;
+  }
+  
+  
+  /* new styles */
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .button-container button {
+    flex: 1;
+  }
+  
+  .button-container  .test-button {
+    background-color: #007bff;
+  }
+  
+  .button-container  .test-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .button-container  .logout-button {
+    background-color: #dc3545;
+  }
+  
+  .button-container  .logout-button:hover {
+    background-color: #c82333;
+  }
