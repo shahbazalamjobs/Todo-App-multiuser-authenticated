@@ -21,7 +21,7 @@ This is a simple Todo application built using the PERN stack (PostgreSQL, Expres
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/shahbazalamjobs/Todo-App-multiuser-authenticated.git
     cd todo-app
     ```
 
@@ -36,7 +36,7 @@ This is a simple Todo application built using the PERN stack (PostgreSQL, Expres
     - Install dependencies:
     
         ```bash
-        npm install
+        npm i bcrypt cors express jsonwebtoken nodemon pg
         ```
     
     - Set up the PostgreSQL database:
@@ -52,13 +52,7 @@ This is a simple Todo application built using the PERN stack (PostgreSQL, Expres
             DB_DATABASE=your_db_name
             JWT_SECRET=your_jwt_secret
             ```
-    
-    - Run database migrations and seed data if any (assuming you have migrations set up):
-    
-        ```bash
-        npx sequelize-cli db:migrate
-        npx sequelize-cli db:seed:all
-        ```
+
     
     - Start the backend server:
     
@@ -83,7 +77,7 @@ This is a simple Todo application built using the PERN stack (PostgreSQL, Expres
     - Configure the backend API URL in the `.env` file (create one if it doesn't exist):
     
         ```env
-        REACT_APP_API_URL=http://localhost:5000
+        REACT_APP_API_URL=http://localhost:5173
         ```
     
     - Start the frontend development server:
@@ -100,30 +94,3 @@ This is a simple Todo application built using the PERN stack (PostgreSQL, Expres
 - **Todos**: User-specific todo list. Requires authentication.
 - **Common Todos**: Open todo list accessible to all users.
 
-## API Endpoints
-
-- **Authentication**:
-    - `POST /api/auth/signup` - Signup a new user.
-    - `POST /api/auth/login` - Login an existing user.
-- **Personal Todos**:
-    - `GET /api/todos` - Get user's todos. (Protected)
-    - `POST /api/todos` - Create a new todo. (Protected)
-    - `PUT /api/todos/:id` - Update a todo. (Protected)
-    - `DELETE /api/todos/:id` - Delete a todo. (Protected)
-- **Common Todos**:
-    - `GET /api/common-todos` - Get all common todos.
-    - `POST /api/common-todos` - Create a new common todo.
-    - `PUT /api/common-todos/:id` - Update a common todo.
-    - `DELETE /api/common-todos/:id` - Delete a common todo.
-
-## Contributing
-
-Feel free to contribute to this project by opening a pull request. Please follow the project's coding style and conventions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-**Note**: Ensure to replace placeholders (e.g., `yourusername`, `your_db_user`, etc.) with actual values specific to your setup.
